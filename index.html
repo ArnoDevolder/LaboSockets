@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Hello World example upgrade</title>
+    </head>
+    <body>
+        <h1>LaboSockets</h1>
+        <label for="gpio">Enter gpio :</label>
+        <input id="gpioID">   
+        <label for="time">Enter seconds :</label>
+        <input id="timeID">
+        <button onclick="OnClickSend()">SEND</button>
+
+<script>
+function OnClickSend()
+{
+    //elements
+    var GPIO = document.getElementById("gpioID");
+    var TIME = document.getElementById("timeID");     
+
+    //log inputs
+    console.log("Pin : "+GPIO.value+" toggeld met een sleep van  "+TIME.value+ " seconden."); 
+}
+</script>
+</body>
+</html>
